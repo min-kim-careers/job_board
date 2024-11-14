@@ -1,0 +1,37 @@
+[
+    {
+        "workHours": 30,
+        "workLoad": 25,
+        "pressure": 20,
+        "flexibility": 15,
+        "support": 10
+    },
+    {
+        "workHours": 20,
+        "workLoad": 15,
+        "pressure": 10,
+        "flexibility": 30,
+        "support": 25
+    },
+    {
+        "workHours": 35,
+        "workLoad": 30,
+        "pressure": 25,
+        "flexibility": 5,
+        "support": 5
+    },
+    {
+        "workHours": 25,
+        "workLoad": 20,
+        "pressure": 15,
+        "flexibility": 20,
+        "support": 20
+    },
+    {
+        "workHours": 22,
+        "workLoad": 18,
+        "pressure": 15,
+        "flexibility": 25,
+        "support": 20
+    }
+]

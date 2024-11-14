@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Software Engineer",
+    "description": "Design, develop, and maintain software applications for various clients.",
+    "location": "Sydney, NSW",
+    "category": "Information Technology",
+    "workType": "Full-time",
+    "payType": "Annual Salary",
+    "payRange": {
+      "from": 90000,
+      "to": 120000
+    },
+    "showPay": true
+  },
+  {
+    "title": "Project Manager",
+    "description": "Lead project teams to deliver IT solutions on time and within budget.",
+    "location": "Melbourne, VIC",
+    "category": "Management",
+    "workType": "Contract",
+    "payType": "Hourly Rate",
+    "payRange": {
+      "from": 50,
+      "to": 75
+    },
+    "showPay": true
+  },
+  {
+    "title": "Graphic Designer",
+    "description": "Create compelling visual content for web, print, and social media platforms.",
+    "location": "Brisbane, QLD",
+    "category": "Design",
+    "workType": "Part-time",
+    "payType": "Annual Salary",
+    "payRange": {
+      "from": 55000,
+      "to": 75000
+    },
+    "showPay": false
+  },
+  {
+    "title": "Marketing Specialist",
+    "description": "Develop and implement marketing strategies to boost brand awareness and engagement.",
+    "location": "Adelaide, SA",
+    "category": "Marketing",
+    "workType": "Full-time",
+    "payType": "Annual Salary",
+    "payRange": {
+      "from": 60000,
+      "to": 85000
+    },
+    "showPay": true
+  },
+  {
+    "title": "Data Analyst",
+    "description": "Analyze and interpret complex datasets to help drive business decisions.",
+    "location": "Perth, WA",
+    "category": "Data Science",
+    "workType": "Full-time",
+    "payType": "Annual Salary",
+    "payRange": {
+      "from": 80000,
+      "to": 110000
+    },
+    "showPay": true
+  },
+  {
+    "title": "HR Coordinator",
+    "description": "Support HR operations, including recruitment, training, and employee relations.",
+    "location": "Hobart, TAS",
+    "category": "Human Resources",
+    "workType": "Full-time",
+    "payType": "Annual Salary",
+    "payRange": {
+      "from": 55000,
+      "to": 70000
+    },
+    "showPay": false
+  },
+  {
+    "title": "Customer Support Representative",
+    "description": "Provide customer service and support for product-related queries.",
+    "location": "Darwin, NT",
+    "category": "Customer Service",
+    "workType": "Part-time",
+    "payType": "Hourly Rate",
+    "payRange": {
+      "from": 25,
+      "to": 35
+    },
+    "showPay": true
+  },
+  {
+    "title": "Electrician",
+    "description": "Install and maintain electrical systems for residential and commercial properties.",
+    "location": "Sydney, NSW",
+    "category": "Trades",
+    "workType": "Full-time",
+    "payType": "Hourly Rate",
+    "payRange": {
+      "from": 35,
+      "to": 50
+    },
+    "showPay": true
+  },
+  {
+    "title": "Content Writer",
+    "description": "Create engaging content for websites, blogs, and social media channels.",
+    "location": "Canberra, ACT",
+    "category": "Writing",
+    "workType": "Freelance",
+    "payType": "Project-based",
+    "payRange": {
+      "from": 2000,
+      "to": 5000
+    },
+    "showPay": false
+  },
+  {
+    "title": "Civil Engineer",
+    "description": "Plan, design, and oversee construction and maintenance of building structures and infrastructure.",
+    "location": "Melbourne, VIC",
+    "category": "Engineering",
+    "workType": "Full-time",
+    "payType": "Annual Salary",
+    "payRange": {
+      "from": 95000,
+      "to": 130000
+    },
+    "showPay": true
+  }
+]
