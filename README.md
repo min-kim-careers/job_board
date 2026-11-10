@@ -1,43 +1,35 @@
-# Full-Stack Job Board
+# Job Board
 
-A full-stack job board application that integrates with job listing APIs to provide users with up-to-date job opportunities. Built with a FastAPI backend, MySQL database, and a React frontend using Next.js.
+A full-stack job search app that pulls live listings from the Adzuna API, with filters, pagination and a metrics dashboard.
 
-## Features
+Status: **Archived**
 
-- **Backend:**
-  - FastAPI for the RESTful API.
-  - Integration with the **Adzuna API** for job listings.
-  - Data stored in a **MySQL database**.
-  - API endpoints for job search and retrieval.
-  - Full **pagination** for job listings and search results.
-  - Easy integration with additional job providers to expand the app's reach (future-proof for becoming a universal job wrapper).
+## Why
+Job sites each have their own search. This is the base for a single search across job providers, starting with Adzuna.
 
-- **Frontend:**
-  - React-based frontend with **Next.js** for server-side rendering.
-  - Dynamic job board listing with search functionality.
-  - Pagination, filters, and job detail views.
-  - **Tailwind CSS** for styling.
-  - UI components built using **ShadCN** for a consistent design system.
+## How it works
+- **Provider layer.** The FastAPI backend wraps the Adzuna API behind its own job schema, so the frontend never sees a provider's format.
+- **Storage and pagination.** Listings are stored in MySQL through SQLAlchemy, with offset pagination on the server.
+- **Search UI.** Keyword, location and multi-select filters plus a salary slider, validated with Zod and React Hook Form.
+- **Metrics.** Recharts dashboards show salary and listing trends for the current search.
 
-- **Additional:**
-  - Metrics dashboard for job board analytics.
-  - Responsive design suitable for both desktop and mobile.
+## Key design decisions
+| Decision | Why | Trade-off |
+|---|---|---|
+| Own job schema in front of Adzuna | New providers plug in without frontend changes | Mapping code to write for each provider |
+| Pagination on the server | Keeps responses small for large result sets | Deep pages get slower with offset pagination |
 
-## Project Structure
+## Stack
+Next.js 14 · React · TypeScript · Zustand · Tailwind + shadcn · FastAPI · SQLAlchemy · MySQL
 
-### Backend (`juggle-api`)
+## Run locally
+Needs a free [Adzuna API key](https://developer.adzuna.com) and a running MySQL server.
+```bash
+cd server && pip install -r requirements.txt && uvicorn app.main:app --reload
+cd app && pnpm install && pnpm dev
+```
 
-- **app/api**: Contains API logic, including Adzuna integration.
-- **app/database**: MySQL configuration and models.
-- **app/routers**: Routes for job-related operations.
-- **app/utils**: Helper functions and utilities.
-- **requirements.txt**: List of Python dependencies.
-
-### Frontend (`juggle-app`)
-
-- **app**: Pages and layout for the job board.
-- **components**: UI components such as job cards, pagination, and headers.
-- **constants**: Constants for forms, options, and pagination.
-- **shadcn**: UI components built using the ShadCN design system.
-- **stores**: React stores for managing job and option data.
-- **styles**: Global styles and Tailwind configuration.
+## What I'd improve next
+- Add a second provider to prove the abstraction works
+- Cursor-based pagination
+- Docker Compose for one-command setup
