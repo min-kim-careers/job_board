@@ -20,12 +20,14 @@ Job sites each have their own search. This is the base for a single search acros
 | Pagination on the server | Keeps responses small for large result sets | Deep pages get slower with offset pagination |
 
 ## Stack
-Next.js 14 · React · TypeScript · Zustand · Tailwind + shadcn · FastAPI · SQLAlchemy · MySQL
+Next.js 14 · React · TypeScript · Zustand · Tailwind + shadcn · FastAPI · SQLAlchemy · MySQL · Redis
 
 ## Run locally
-Needs a free [Adzuna API key](https://developer.adzuna.com) and a running MySQL server.
+Needs a free [Adzuna API key](https://developer.adzuna.com), plus MySQL and Redis running locally. Copy `server/.env.example` and `app/.env.example` to `.env` in the same folders and fill them in.
 ```bash
+# terminal 1
 cd server && pip install -r requirements.txt && uvicorn app.main:app --reload
+# terminal 2
 cd app && pnpm install && pnpm dev
 ```
 
